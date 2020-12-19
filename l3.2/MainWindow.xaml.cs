@@ -30,20 +30,25 @@ namespace l3._2
             try {
 
                 //Получение значения m от пользователя
-                double m = double.Parse(Input.Text);
-                double result = 0;
-
-                for (int i = 100; i <= 1000; i++)
+                int m = int.Parse(Input.Text);
+                double n = 0;
+                int i = 100;
+                
+                while (i <= 1000)
                 {
-                    if ((i * i) % 5 == 0) //Проверка квадрата сотен на кратность 5
+                    if ((i * i) % 5 == 0)
                     {
-                        result += (i * i) / m;
+                        n = (double)(i * i) / m;
                     }
+                    Output.Text += n + " ";
+                    i += 100;
                 }
+                
 
                 //Вывод результата 
-                Output.Text = result.ToString();
-            } 
+                //Output.Text = "Result: " + st + Environment.NewLine;
+            }
+
 
             catch (Exception ex)
             {
