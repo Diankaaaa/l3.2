@@ -44,9 +44,7 @@ namespace l3._2
                     i += 100;
                 }
                 
-
                 //Вывод результата 
-                //Output.Text = "Result: " + st + Environment.NewLine;
             }
 
 
